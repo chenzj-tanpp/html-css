@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="">
+    <title>软件</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        body{background: url("images/bg.jpg") repeat-x}
+        .head{
+            width:1002px;
+            margin: 0 auto;
+            overflow: hidden;
+            background: url("images/logo_r.jpg") no-repeat right top;
+            text-align: right;
+            font:12px/24px "微软雅黑";
+        }
+        .head .logo{
+            width: 341px;
+            height:147px;
+            background:url("images/logo.jpg") no-repeat left top;
+            float: left;
+        }
+        .head a{
+            text-decoration: none;
+            color: #dddddd;
+            padding:0 4px;
+        }
+        .nav{
+            width: 1002px;
+            margin:0 auto;
+            background: #6b176f;
+            padding:0 1px 0 2px;
+            overflow: hidden;
+        }
+        .nav ul{
+            list-style: none;
+
+        }
+        .nav ul li{
+            width: 111px;
+            float: left;
+            font:15px/36px "微软雅黑";
+        }
+        .nav ul li a:link, .nav ul li a:visited{
+            color: #eee;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+        }
+        .nav ul li a:hover{
+            background: #741873;
+            color: #ffcf11;
+            position: relative;
+        }
+        .banner{
+            width: 1002px;
+            margin: 0 auto;
+            margin-top: 8px;
+        }
+        .news{
+            width: 1002px;
+            margin:0 auto;
+            overflow: hidden;
+        }
+        h1{
+            font:17px/23px "微软雅黑";
+        }
+        .fl{
+             float: left;
+        }
+        .news .more img{
+            padding-top:4px;
+            padding-right: 10px;
+        }
+        .news .xyNews{
+            width:520px;
+            height:255px;
+            float: left;
+        }
+        .news .xyNews .xycol{
+            background: url("images/xy_xx.jpg") no-repeat bottom  left;
+            overflow: hidden;
+             text-align: right;
+            overflow: hidden;
+
+        }
+        .news .xyNews .xycol h1{
+            padding-left: 23px;
+        }
+        .news .xyNews .xyconct{
+            overflow: hidden;
+        }
+        .news .xyNews .xyconct img{
+            width: 240px;
+            height:183px;
+        }
+        .news .xyNews .xyconct .left{
+            float: left;
+            width: 240px;
+            padding:24px 10px 25px 23px;
+        }
+        .news .biaoti{
+            font:13px/29px "微软雅黑";
+           float: left;
+        }
+        .news .date{
+           font:13px/29px "微软雅黑";
+           color: #8c3397;
+           float: right;
+       }
+        .news ul{
+             list-style: none;
+        }
+        .news ul li{
+            padding: 0 4px;
+            border-bottom:1px dashed #ddd;
+            overflow: hidden;
+        }
+        .news .xyNews .xyconct .right{
+            width:247px;
+            float:right;
+        }
+        .news ul li a{
+            color: #444;
+            text-decoration:none;
+        }
+        .news .tz{
+            width:220px;
+            float: left;
+            margin-left:20px;
+        }
+        .news .tz .tzcol{
+            background: url("images/xxxx.jpg") no-repeat bottom left;
+            overflow: hidden;
+            text-align: right;
+        }
+        .ml22{
+            margin-left:22px;
+        }
+        .ml21{
+            margin-left: 21px;
+        }
+        .ml20{
+            margin-left: 20px;
+        }
+        .quick{
+            width:956px;
+            height: 67px;
+            padding:0  26px 0 20px;
+            border-bottom: 2px solid #6b176f;
+            margin:0 auto;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+        .quick .kstd{
+            float: left;
+            width:715px;
+        }
+        .quick .kstd .ks{
+            background: url("images/right_xx.jpg") no-repeat bottom left;
+        }
+        .quick .kstd .links{
+            line-height: 40px;
+            font-size:13px;
+            font-family: "微软雅黑";
+             padding: 0 80px;
+        }
+        .quick .kstd .links a{
+            text-decoration: none;
+            color: #762476;
+            margin-left: 38px;
+        }
+        .quick .kstd .links a.first{
+            margin-left: 0px;
+        }
+        .quick .ss {
+            width: 220px;
+            float: left;
+        }
+        .quick .ss .sscol{
+            background: url("images/xxxx.jpg")no-repeat bottom left;
+        }
+        .quick .ss .ipt{
+            padding-top: 6px;
+            padding-left: 30px;
+        }
+        .quick .ss .ipt input{
+            vertical-align: middle;
+            line-height: 27px;
+            width:154px;
+        }
+        .quick .ss .ipt img{
+            vertical-align: middle;
+        }
+        .foot{
+            width: 1002px;
+            margin:0 auto;
+            font:13px/59px "微软雅黑";
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+        .foot span.first{
+            margin-left:0;
+        }
+        .foot span a{
+            text-decoration: none;
+             color: #2116ee;
+        }
+        .foot span a:active{
+            color: red;
+        }
+        .nav ul li.hd:hover div{
+                display:block;
+            }
+        .nav ul li.hd div{
+                display:none;
+                position:absolute;
+                background: #6b176f;
+            }
+        .nav ul li.hd div .teshu .ts{
+            float: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="head">
+            <div class="logo"></div>
+            <a href="#">设为首页</a>
+           <a href="#">加入收藏</a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="hd"><a href="#"> 学院首页</a></li>
+                <li class="hd"><a href="#"> 学院概况</a><div>
+                    <ul class="teshu">
+                        <li class="ts"><a href="#"> 学院简介 </a></li>
+                        <li class="ts"><a href="#"> 机构设置 </a></li>
+                        <li class="ts"><a href="#"> 现任领导 </a></li>
+                        <li class="ts"><a href="#"> 专业方向 </a></li>
+                        <li class="ts"><a href="#"> 办学特色 </a></li>
+                    </ul>
+                </div> </li>
+                <li class="hd"><a href="#"> 党建思政</a><div>
+                    <ul class="teshu">
+                        <li class="ts"><a href="#">党务公开 </a></li>
+                        <li class="ts"><a href="#">院务公开 </a></li>
+                        <li class="ts"><a href="#">理论学习 </a></li>
+                        <li class="ts"><a href="#">入党须知 </a></li>
+                        <li class="ts"><a href="#">党员活动 </a></li>
+                    </ul>
+                </div> </li>
+                <li class="hd"><a href="#"> 教育教学</a><div>
+                    <ul class="teshu">
+                        <li class="ts"> <a href="#" > 教学管理 </a></li>
+                        <li class="ts"> <a href="#" > 学科建设 </a></li>
+                        <li class="ts"> <a href="#" > 教学资源 </a></li>
+                    </ul>
+                </div> </li>
+                <li class="hd"><a href="#"> 科学研究</a><div>
+                    <ul class="teshu">
+                        <li class="ts"><a href="#">科研信息 </a></li>
+                        <li class="ts"><a href="#">科研成果 </a></li>
+                        <li class="ts"><a href="#"> 对外合作</a></li>
+                    </ul>
+                </div> </li>
+                <li class="hd"><a href="#"> 实习实训</a><div>
+                    <ul class="teshu">
+                        <li class="ts"><a href="#"> 实习</a></li>
+                        <li class="ts"><a href="#"> 实训</a></li>
+                    </ul>
+                </div> </li>
+                <li class="hd"><a href="#"> 团学工作</a><div>
+
+                    <ul class="teshu">
+                        <li class="ts"><a href="#"> 学生工作</a></li>
+                        <li class="ts"><a href="#"> 团学组织</a></li>
+                        <li class="ts"><a href="#"> 规章制度</a></li>
+                        <li class="ts"><a href="#"> 团学风采</a></li>
+                        <li class="ts"><a href="#"> 心理健康</a></li>
+                        <li class="ts"><a href="#"> 学生资助</a></li>
+                        <li class="ts"><a href="#"> 安全教育</a></li>
+                        <li class="ts"><a href="#"> 学生工作品牌</a></li>
+                    </ul>
+                </div> </li>
+                <li class="hd"><a href="#"> 招生就业</a><div>
+                    <ul class="teshu">
+                        <li class="ts"><a href="#"> 招生简章</a></li>
+                        <li class="ts"><a href="#"> 就业指导</a></li>
+                    </ul>
+
+                </div> </li>
+                <li class="hd"><a href="#"> 工会活动</a><div>
+                    <ul class="teshu">
+                        <li class="ts"><a href="#"> 工会文件</a></li>
+                        <li class="ts"><a href="#"> 工会活动</a></li>
+                    </ul>
+                </div> </li>
+            </ul>
+        </div>
+        <div class="banner">
+            <img src="images/banner_1.jpg" alt="" >
+        </div>
+        <div class="news">
+            <div class="xyNews">
+                <div class="xycol">
+                    <h1 class="fl">学院新闻</h1>
+                    <a href="#" class="more"><img src="images/more.jpg"></a>
+                </div>
+                <div class="xyconct">
+                    <div class="left"><a><img src="images/1cay5xodjs.jpg" </a></div>
+                    <div class="right">
+                        <ul>
+                            <li><a href="#" class=" biaoti">水边大的发发发发1</a> <span class="date"> 6466</span></li>
+                            <li><a href="#" class=" biaoti">水边大的发发发发1</a> <span class="date"> 6466</span></li>
+                            <li><a href="#" class=" biaoti">水边大的发发发发1</a> <span class="date"> 6466</span></li>
+                            <li><a href="#" class=" biaoti">水边大的发发发发1</a> <span class="date"> 6466</span></li>
+                            <li><a href="#" class=" biaoti">水边大的发发发发1</a> <span class="date"> 6466</span></li>
+                            <li><a href="#" class=" biaoti">水边大的发发发发1</a> <span class="date"> 6466</span></li>
+                            <li><a href="#" class=" biaoti">水边大的发发发发1</a> <span class="date"> 6466</span></li>
+                            <li><a href="#" class=" biaoti">水边大的发发发发1</a> <span class="date"> 6466</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tz ml22">
+                <div class="tzcol">
+                    <h1 class="fl">通知公告</h1>
+                    <a href="#" class="more"> <img src="images/more.jpg" > </a>
+                </div>
+                <div class="tzTitles">
+                    <ul>
+                        <li><a href="#" class="biaoti">随便的打的字不要在意</a><span class="date">02-15</span></li>
+                        <li><a href="#" class="biaoti">随便的打的字不要在意</a><span class="date">02-15</span></li>
+                        <li><a href="#" class="biaoti">随便的打的字不要在意</a><span class="date">02-15</span></li>
+                        <li><a href="#" class="biaoti">随便的打的字不要在意</a><span class="date">02-15</span></li>
+                        <li><a href="#" class="biaoti">随便的打的字不要在意</a><span class="date">02-15</span></li>
+                        <li><a href="#" class="biaoti">随便的打的字不要在意</a><span class="date">02-15</span></li>
+                        <li><a href="#" class="biaoti">随便的打的字不要在意</a><span class="date">02-15</span></li>
+                        <li><a href="#" class="biaoti">随便的打的字不要在意</a><span class="date">02-15</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tz ml20">
+                 <div class="tzcol">
+                    <h1 class="fl">团学信息</h1>
+                    <a href="#" class="more"> <img src="images/more.jpg" > </a>
+                </div>
+                <div class="tzTitles">
+                    <ul>
+                        <li><a href="#" class="biaoti">随便的打的字不要在意</a><span class="date">12-12</span></li>
+                        <li><a href="#" class="biaoti">随便的打的字不要在意</a><span class="date">12-12</span></li>
+                        <li><a href="#" class="biaoti">随便的打的字不要在意</a><span class="date">12-12</span></li>
+                        <li><a href="#" class="biaoti">随便的打的字不要在意</a><span class="date">12-12</span></li>
+                        <li><a href="#" class="biaoti">随便的打的字不要在意</a><span class="date">12-12</span></li>
+                        <li><a href="#" class="biaoti">随便的打的字不要在意</a><span class="date">12-12</span></li>
+                        <li><a href="#" class="biaoti">随便的打的字不要在意</a><span class="date">12-12</span></li>
+                        <li><a href="#" class="biaoti">随便的打的字不要在意</a><span class="date">12-12</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="quick">
+            <div class="kstd">
+                <div class="ks">
+                    <h1>快速通道</h1>
+                </div>
+                <div class="links">
+                    <a href="#" class="first">随便打的不要在意</a>
+                    <a href="#">随便打的不要在意</a>
+                    <a href="#">随便打的不要在意</a>
+                    <a href="#">随便打的不要在意</a>
+                </div>
+            </div>
+            <div class="ss">
+                <div class="sscol ml21">
+                    <h1>站内搜索</h1>
+                </div>
+                <div class="ipt">
+                    <input type="text"><img src="images/ss.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="foot">
+            <span class="ml20 first">版权所有：安阳师范学院软件学院</span>
+            <span class="ml20">地址：安阳市文峰区文明大道265号 教学楼</span>
+            <span class="ml20">邮编：455000</span>
+            <span class="ml20">电子邮箱：<a href="#"> rjxy@aynu.edu.cn </a></span>
+        </div>
+    </div>
+</body>
+</html>
